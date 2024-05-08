@@ -1,0 +1,199 @@
+
+
+.product--form {
+    width: 70rem;
+    margin: 4.2rem auto;
+    padding: 2rem;
+}
+.product-form-heading {
+    font-size: 3.4rem;
+    margin-bottom: 3.2rem;
+    font-weight: 500;
+    color: #555;
+}
+.product--upload-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+
+
+.form--grid-prod, .form--grid-prod-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: .6rem;
+}
+.form--item {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+.form--label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.form--input {
+    padding: 1.2rem;
+    border-radius: .4rem;
+    outline: none;
+    border: 1.6px solid #eee;
+    font-family: inherit;
+    transition: all .35s;
+}
+.form--input:focus, .form__textarea:focus {
+    outline: none;
+    border-color: #008001;
+}
+.form--input::placeholder {
+    font-family: inherit;
+}
+.form__textarea {
+    resize: none;
+    overflow: hidden;
+}
+.form__textarea,
+.form__select {
+	padding: 1.2rem;
+	width: 100%;
+	border: 1.6px solid #eee;
+	border-radius: 0.6rem;
+	transition: all 0.35s;
+	font-family: inherit;
+}
+
+.image-item__btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.image-item__btn-wrapper button {
+    padding: .4rem;
+    border-radius: .2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+.image-item__btn-wrapper button:nth-child(1) {
+    color: #008001;
+}
+.image-item__btn-wrapper button:nth-child(2) {
+    color: #bb0505;
+}
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: 2rem;
+}
+.image-grid img {
+	width: 100px;
+	height: 80px;
+}
+.image-grid .mobile-item {
+	display: none;
+}
+.image-grid .mobile-item button {
+	padding: .1rem .4rem;
+	font-size: 1.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.multiple-image-container span {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+.multiple-image-container button {
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+.multiple-image-container button.main-btn {
+	font-size: 1.4rem;
+	margin-bottom: .4rem;
+	display: flex;
+	align-items: center;
+	gap: .4rem;
+    padding: .4rem;
+    /* background-color: #FF0066; */
+    background-color: #008001;
+    color: #fff;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+
+.input--box {
+    display: grid;
+    grid-template-columns: 1fr 10rem;
+    gap: 2rem;
+}
+.input--box button span {
+    font-size: 2rem;
+}
+.input--box button {
+    color: #fff;
+    font-weight: 600;
+    background-color: #FF0066;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    cursor: pointer;
+    border-radius: .4rem;
+}
+
+
+.specs--list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: .5rem;
+    list-style: none;
+}
+
+.specs--list li {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.specs--list li span {
+    color: #FF0066;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .35s;
+}
+.specs--list li span:hover {
+    background-color: #FF0066;
+    color: #fff;
+}
+.form--item button {
+    padding: 1.2rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.product--upload-form .form--btn {
+    background-color: #008001;
+    color: #fff;
+    border-radius: .4rem;
+    transition: all .35s;
+}
+
+.input--box button:hover, .form--item button:hover {
+    opacity: .8;
+}

@@ -1,0 +1,114 @@
+#form-image-input {
+	display: none;
+}
+#form-image-label {
+	border: 1.2px dashed #ccc;
+	width: 100%;
+    height: 12rem;
+	border-radius: 0.8rem;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.35s;
+}
+#form-image-label.hoverable span {
+	display: none;
+}
+#form-image-label.hoverable:hover span {
+    display: flex;
+	background-color: rgba(0, 0, 0, 0.35);
+}
+#form-image-label.hoverable:hover span .form-image-icon, #form-image-label.hoverable:hover span p {
+    color: #fff;
+}
+#form-image-label span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.8rem;
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: all 0.35s;
+}
+.form-image-icon {
+    font-size: 1.8rem;
+    color: #999;
+    margin-top: -.4rem;
+}
+#form-image-label span p {
+	font-size: 1.4rem;
+    font-weight: 500;
+    color: #999;
+}
+#form-image {
+	height: 100%;
+    width: 100%;
+	object-fit: cover;
+}
+
+/* ================================== */
+.editor__container {
+	padding: 0 2.4rem;
+	overflow-x: hidden;
+}
+.editor__container div:nth-child(1):focus-visible {
+    outline: 0;
+}
+.form-image-card { 
+    margin: 1.4rem 0 2.4rem;
+}
+.title--input {
+	padding: 1rem 1.6rem;
+	margin-left: -1.2rem;
+	width: 100%;
+	font-size: 4.8rem !important;
+	color: #777;
+	border: none;
+	font-family: inherit;
+}
+.title--input::placeholder {
+	font-size: 4.8rem;
+	font-family: inherit;
+}
+.title--input:focus {
+	outline: none;
+}
+.content-area {
+	margin-top: 4.8rem;
+	margin-bottom: 10rem;
+	cursor: text;
+}
+
+
+#tinymce {
+    border: none !important;
+}
+/* one way */
+.tox-notifications-container{
+	visibility: hidden;
+}
+/* another way */
+.tox-notifications-container{
+	display: none;
+}
+
+
+/* Hide the border from the TinyMCE editor */
+.tox-tinymce .tox-editor-container,
+.tox-tinymce .tox-editor-container iframe {
+	border-color: #fff !important;
+	box-shadow: none !important;
+}
+
+/* Optional: If you want to remove the box shadow as well */
+.tox-tinymce .tox-editor-container {
+    box-shadow: none !important;
+	border-color: #fff !important;
+}
+
+
